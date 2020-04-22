@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity1">
+
+    <!-- style="?android:attr/ratingBarStyle" 일때 width 를 wrap_contents-->
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        style="?android:attr/ratingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--style="?android:attr/ratingBarStyleIndicator" 별점 수정 불가 -->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:rating -> 초기값을 지정할 때 사용-->
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:numStars="5"
+        android:stepSize="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--android:isIndicator="false" : 직접 수정 가능하게 방법-->
+    <RatingBar
+        android:id="@+id/ratingBar3"
+        style="?android:attr/ratingBarStyleSmall"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:stepSize="1"
+        android:rating="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RatingBar
+        android:id="@+id/ratingBar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RatingBar
+        android:id="@+id/ratingBar5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inc" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desc" />
+</LinearLayout>

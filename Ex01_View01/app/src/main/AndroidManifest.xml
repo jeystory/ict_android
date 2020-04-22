@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.ex01_view01" >
+
+    <dist:module dist:instant="true" />
+    <!-- app이 만들어졌을 때 보이는 아이콘이나 이름등을 지정하는 곳 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/burger"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/burger"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        4대 컴포넌트 만든 후 반드시 여기에 등록해야 사용가능
+        4대 컴포넌트
+            1. activity : 화면을 담당하는 컴포넌트
+            2. service : background 에서 실행되는 컴포넌트. UI가 없음
+            3. receiver : 다양한 이벤트 정보를 받고 반응하는 컴포넌트
+            4. provider : content provider. 데이터를 관리하고 다른 어플리케이션 데이터를 제공하는 컴포넌트
+        -->
+
+    </application>
+
+</manifest>

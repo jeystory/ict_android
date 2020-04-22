@@ -1,0 +1,2 @@
+rootProject.name='Ex79_Socket'
+include ':app'

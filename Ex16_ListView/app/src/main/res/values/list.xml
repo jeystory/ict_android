@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 배열 만들기-->
+    <array name="web">
+        <item> 수업내용</item>
+        <item> Java Programming</item>
+        <item> database</item>
+        <item> Html</item>
+        <item> CSS</item>
+        <item> JavaScript </item>
+        <item> Android </item>
+    </array>
+</resources>

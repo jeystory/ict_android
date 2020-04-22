@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="arr2">
+        <item>수업과목</item>
+        <item>Java</item>
+        <item>Databse</item>
+        <item>Html</item>
+        <item>CSS</item>
+        <item>JavaScript</item>
+        <item>Android</item>
+    </array>
+
+</resources>

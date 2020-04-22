@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:columnCount="2"
+    android:rowCount="5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수1 : " />
+
+    <EditText
+        android:id="@+id/eText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="정수를 입력하세요."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수2" />
+
+    <EditText
+        android:id="@+id/eText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="정수를 입력하세요."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연산자" />
+
+    <EditText
+        android:id="@+id/eText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="+,-.* or / "/>
+
+    <TextView
+        android:id="@+id/tView1"
+        android:layout_columnSpan="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="계산하기" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결과는 : " />
+
+    <TextView
+        android:id="@+id/tView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+</GridLayout>

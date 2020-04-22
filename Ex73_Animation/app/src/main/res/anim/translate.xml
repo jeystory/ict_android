@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:duration="2000" android:fillAfter="true"  >
+    <!--
+   fromXDelta="0%" ; 시작위치의 x좌표
+   toXDelta="-100%" : 끝위치의 x좌표 (+ => 오른쪽이동, - => 왼쪽으로 이동
+   android:repeatCount="-1" : 무한반복
+   android:repeatCount="0" : 한번 실행
+   -->
+    <!--<translate
+        android:fromXDelta="0%"
+        android:toXDelta="100%"
+        android:repeatCount="-1"/>-->
+
+   <!-- <translate
+        android:fromYDelta="0%"
+        android:toYDelta="-100%"
+        android:repeatCount="0"/>-->
+
+    <!-- 왼쪽으로 이동후 서서히 나타남(alpha)-->
+    <!-- 0.0 투명 1.0 불투명-->
+  <!--  <translate android:fromXDelta="100%" android:toXDelta="0%"/>
+    <alpha android:fromAlpha="0.0" android:toAlpha="1.0"/>-->
+    <!-- 오른쪽으로 이동하여 서서히 사라짐(alpha)-->
+    <translate android:fromXDelta="0%" android:toXDelta="100%"/>
+    <alpha android:fromAlpha="1.0" android:toAlpha="0.0"/>
+</set>
